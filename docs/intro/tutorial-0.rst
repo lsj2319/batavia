@@ -97,3 +97,18 @@ Run this command::
 Then try compiling the Batavia library again::
 
    $ npm run build
+   
+If you are still getting errors, make sure you are in the batavia directory.
+
+I also found the following error when running python compile_stdlib.py::
+  "File "./node_modules/@pybee/ouroboros/ouroboros/abc.py", line 171"
+  "print("Class: %s.%s" % (cls.__module__, cls.__name__), file=file)"
+  "SyntaxError: invalid syntax"
+
+The build went fine though so your mileage may vary. 
+
+You may not have Python3. You can check your version with Homebrew::
+   $ brew search python
+   
+This will show you all related packages you can install. Anything installed will be bold with a checkmark. To install python3, run this command::
+   $ brew install python3
